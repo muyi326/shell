@@ -146,9 +146,8 @@ while :; do
                 initialize_app
             else
                 echo "[$(date +"%T")] ✅ 程序运行正常（已连接）"
-                sleep 30
             fi
-            
+            sleep 30
         done
         
     else
