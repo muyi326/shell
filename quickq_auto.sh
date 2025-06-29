@@ -138,7 +138,7 @@ while :; do
         osascript -e 'tell application "System Events" to set visible of process "QuickQ For Mac" to false'
         
         # 每30秒检查程序是否运行
-        for ((i=0; i<2; i++)); do  # 60次 × 30秒 = 30分钟
+        for ((i=0; i<20; i++)); do  # 60次 × 30秒 = 30分钟
             if ! pgrep -f "$APP_NAME" &> /dev/null; then
                 echo "[$(date +"%T")] ❌ 程序未运行，正在启动..."
                 open "$APP_PATH"
