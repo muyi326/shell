@@ -75,7 +75,7 @@ connect_procedure() {
     
     cliclick c:${CONNECT_BUTTON_X},${CONNECT_BUTTON_Y}
     echo "[$(date +"%T")] 已发起连接请求"
-    sleep 15
+    sleep 20
     
     # 连接后检查状态
     if check_vpn_connection; then
