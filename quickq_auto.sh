@@ -66,6 +66,9 @@ connect_procedure() {
     
     # 调整窗口并点击连接
     adjust_window
+    cliclick c:${SETTINGS_BUTTON_X},${SETTINGS_BUTTON_Y}
+    echo "[$(date +"%T")] 师爷正在用意念帮您启动"
+    sleep 1
     cliclick c:${DROP_DOWN_BUTTON_X},${DROP_DOWN_BUTTON_Y}
     echo "[$(date +"%T")] 已点击下拉菜单"
     sleep 1
